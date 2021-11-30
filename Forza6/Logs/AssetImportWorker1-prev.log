@@ -15,7 +15,7 @@ D:/Programacion/Programacion/Tec/Multiagentes/Forza6/Forza6
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62369
+53746
 Successfully changed project path to: D:/Programacion/Programacion/Tec/Multiagentes/Forza6/Forza6
 D:/Programacion/Programacion/Tec/Multiagentes/Forza6/Forza6
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/Programacion/Programacion/Tec/Multiagentes/Forza6/Forza6
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 85.65 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 89.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.0f1 (4bf1ec4b23c9)
 [Subsystems] Discovering subsystems at path C:/Users/victo/Documents/UnityEditores/2021.2.0f1/Editor/Data/Resources/UnitySubsystems
@@ -63,47 +63,47 @@ Initialize mono
 Mono path[0] = 'C:/Users/victo/Documents/UnityEditores/2021.2.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/victo/Documents/UnityEditores/2021.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Users/victo/Documents/UnityEditores/2021.2.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/victo/Documents/UnityEditores/2021.2.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Users/victo/Documents/UnityEditores/2021.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008646 seconds.
+Registered in 0.008376 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 91.90 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 79.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.003 seconds
+- Completed reload, in  0.863 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1003ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (863ms)
+		BeginReloadAssembly (74ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (553ms)
-			LoadAssemblies (91ms)
+		EndReloadAssembly (445ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (138ms)
+			SetupTypeCache (100ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (316ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (270ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (92ms)
+				RefreshPlugins (80ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				ProcessInitializeOnLoadAttributes (136ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006130 seconds.
+Registered in 0.005159 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Programacion\Programacion\Tec\Multiagentes\Forza6\Forza6\Library\PackageCache\com.unity.visualscripting@1.7.2\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Programacion\Programacion\Tec\Multiagentes\Forza6\Forza6\Library\PackageCache\com.unity.visualscripting@1.7.2\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -112,43 +112,43 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.230 seconds
+- Completed reload, in  1.400 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1231ms)
-		BeginReloadAssembly (191ms)
+	ReloadAssembly (1401ms)
+		BeginReloadAssembly (178ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (937ms)
-			LoadAssemblies (89ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1117ms)
+			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (220ms)
+			SetupTypeCache (285ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (486ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (579ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (15ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (366ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (440ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3489 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 97 unused Assets / (97.1 KB). Loaded Objects now: 3935.
 Memory consumption went from 131.6 MB to 131.5 MB.
-Total: 5.471900 ms (FindLiveObjects: 0.375800 ms CreateObjectMapping: 0.829500 ms MarkObjects: 4.027000 ms  DeleteObjects: 0.238200 ms)
+Total: 3.883100 ms (FindLiveObjects: 0.360200 ms CreateObjectMapping: 0.391900 ms MarkObjects: 2.880100 ms  DeleteObjects: 0.249700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,7 +162,25 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 33622.127626 seconds.
-  path: Assets/Rune Assets
-  artifactKey: Guid(cafc8f0d685ef534fb6bdad1df40ee6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rune Assets using Guid(cafc8f0d685ef534fb6bdad1df40ee6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ecefb1bc6c19a64b880b18ed094a367') in 0.011068 seconds 
+  Time since last request: 33919.097276 seconds.
+  path: Assets/Prefabs/Cruce_V1.prefab
+  artifactKey: Guid(28eb565df9bbf0d47a455bb8fe631c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cruce_V1.prefab using Guid(28eb565df9bbf0d47a455bb8fe631c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6f8ff3086cc7722ab0b6482d5aa95d') in 0.258828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.565655 seconds.
+  path: Assets/Prefabs/Vehiculos/Car2.prefab
+  artifactKey: Guid(cea45a7adcbf8d149a2f7e7269c2a6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vehiculos/Car2.prefab using Guid(cea45a7adcbf8d149a2f7e7269c2a6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b85f4f257631f1df6d9fc9c7f795d5e1') in 0.022692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Vehiculos/Car5.prefab
+  artifactKey: Guid(3891ffaf7ad2d284c8350a28eaa0526f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vehiculos/Car5.prefab using Guid(3891ffaf7ad2d284c8350a28eaa0526f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11366bca70625ec8e911f5cd9e307d9e') in 0.016273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Vehiculos/Car9.prefab
+  artifactKey: Guid(ab1a5e9974f3280448897a3fb945b0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vehiculos/Car9.prefab using Guid(ab1a5e9974f3280448897a3fb945b0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb6792e9fde7d0b05c474fd0f275661') in 0.033271 seconds 
