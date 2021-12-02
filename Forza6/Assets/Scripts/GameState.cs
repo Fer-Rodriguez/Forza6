@@ -33,16 +33,22 @@ public class GameState : MonoBehaviour
     public GameObject[] models = new GameObject[10];
 
     //Objetos
-    public List<CocheInstance> coches = new List<CocheInstance>(); 
+    public List<CocheInstance> coches = new List<CocheInstance>();
+
+
+    //API direcciones: 
+    string local = "http://127.0.0.1:5000/";
+    string ibm = "https://multiagentes-excellent-raven-co.mybluemix.net/";
 
     IEnumerator UpdatePositions()
     {
-        using (UnityWebRequest www = UnityWebRequest.Get("http://127.0.0.1:5000/getStepInfo"))
+        using (UnityWebRequest www = UnityWebRequest.Get(ibm+"getStepInfo"))
         {
 
             // Request and wait for the desired page.
             yield return www.SendWebRequest();
             myData = JsonUtility.FromJson<Data>(www.downloadHandler.text);
+            Debug.Log(myData);
             if (!dataLoaded)
             {
                 setData();
@@ -61,7 +67,7 @@ public class GameState : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("myField", "myData");
 
-        using (UnityWebRequest www = UnityWebRequest.Post("http://127.0.0.1:5000/createModel", form))
+        using (UnityWebRequest www = UnityWebRequest.Post(ibm+"createModel", form))
         {
 
             yield return www.SendWebRequest();
@@ -94,7 +100,12 @@ public class GameState : MonoBehaviour
         {
             if (indice > coches.Count-1)
             {
-                GameObject cocheObjecto = Instantiate(randomModel(), new Vector3(coche.posX, 0, coche.posY), Quaternion.identity);
+                int desplazamientoY = 7; 
+                if(coche.posY == 0)
+                {
+                    desplazamientoY = 0;
+                }
+                GameObject cocheObjecto = Instantiate(randomModel(), new Vector3(coche.posX, 0, coche.posY + desplazamientoY), Quaternion.identity);
                 CocheInstance cocheCompleto = new CocheInstance(coche, cocheObjecto);
                 coches.Add(cocheCompleto);
             }
@@ -103,13 +114,31 @@ public class GameState : MonoBehaviour
                 Debug.Log("Actualizando valore");
                 float speed = 1;
                 GameObject miCocheObject = coches[indice].modelo;
-                Vector3 target = new Vector3(coche.posX, 0, coche.posY);
 
-                miCocheObject.transform.position = target;
+                if (!coches[indice].info.noRenderizar)
+                {
+                    if (coche.finalizo)
+                    {
+                        Destroy(miCocheObject);
+                        coches[indice].info.noRenderizar = true;
+                    }
+                    else
+                    {
+                        Debug.Log(coche.angulo);
+                        Vector3 target = new Vector3(coche.posX, 0, coche.posY);
+
+                        miCocheObject.transform.position = target;
+
+                        Vector3 temp = transform.rotation.eulerAngles;
+                        temp.y = coche.angulo;
+
+                        miCocheObject.transform.rotation = Quaternion.Euler(temp);
+
+                    }
+                }
                 indice++;
             }
-           
-
+             
         }
     }
 
